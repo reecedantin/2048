@@ -1,3 +1,5 @@
+//THIS IS WAS PUT HERE BY REECE
+
 function HTMLActuator() {
   this.tileContainer    = document.querySelector(".tile-container");
   this.scoreContainer   = document.querySelector(".score-container");
