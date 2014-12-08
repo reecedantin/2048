@@ -35,18 +35,18 @@ KeyboardInputManager.prototype.listen = function () {
   var self = this;
 
   var map = {
-    38: 0, // Up
-    39: 1, // Right
-    40: 2, // Down
-    37: 3, // Left
-    75: 0, // Vim up
-    76: 1, // Vim right
-    74: 2, // Vim down
-    72: 3, // Vim left
-    87: 0, // W
-    68: 1, // D
-    83: 2, // S
-    65: 3  // A
+    38: 3, // Up
+    39: 2, // Right
+    40: 1, // Down
+    37: 0, // Left
+    75: 3, // Vim up
+    76: 2, // Vim right
+    74: 1, // Vim down
+    72: 0, // Vim left
+    87: 3, // W
+    68: 2, // D
+    83: 1, // S
+    65: 0  // A
   };
 
   // Respond to direction keys
@@ -127,7 +127,7 @@ KeyboardInputManager.prototype.listen = function () {
 
     if (Math.max(absDx, absDy) > 10) {
       // (right : left) : (down : up)
-      self.emit("move", absDx > absDy ? (dx > 0 ? 1 : 3) : (dy > 0 ? 2 : 0));
+      self.emit("move", absDx > absDy ? (dx > 0 ? 3 : 1) : (dy > 0 ? 0 : 2));
     }
   });
 };
