@@ -1,5 +1,7 @@
 //THIS IS WAS PUT HERE BY REECE
 
+this should throw an error somewhere.
+
 function HTMLActuator() {
   this.tileContainer    = document.querySelector(".tile-container");
   this.scoreContainer   = document.querySelector(".score-container");
